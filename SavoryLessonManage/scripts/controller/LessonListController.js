@@ -1,5 +1,7 @@
 function LessonListController($scope, $state, $stateParams, SavoryLessonManageService) {
 
+    $scope.savoryLessonsHost = window.savoryLessonsHost;
+
     function lesson_items_callback(response) {
 
         $scope.items_loaded = true;
