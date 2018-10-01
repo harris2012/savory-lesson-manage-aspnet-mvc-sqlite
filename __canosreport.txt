@@ -1,0 +1,93 @@
+====================summary====================
+{
+  "Project": {
+    "Name": "SavoryLessonManage",
+    "Title": "课程管理系统后台",
+    "DBName": "SavoryLesson",
+    "Description": "课程管理系统后台，Google Claat",
+    "JavaRootPackage": "cn.savory.app.lessonmanage",
+    "JavaGroupId": "cn.savory.app",
+    "JavaArtifactId": "lesson-manage",
+    "ProjectGuid": "3f47ff8b-8fb9-4f3b-916c-19f3ee07b8eb",
+    "SolutionGuid": "5bcb09a3-195d-49cd-a4de-70e8277db5a0",
+    "Id": 15,
+    "DataStatus": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "LastUpdateTime": "0001-01-01T00:00:00"
+  },
+  "Profile": {
+    "ProjectName": "SavoryLessonManage",
+    "ProfileName": "SavoryLessonManage",
+    "OutputFolder": "D:\\TheGitlabWorkspace\\savory-app\\savory-lesson-manage-aspnet-mvc-sqlite",
+    "RepositoryType": "Sqlite",
+    "Description": "课程管理系统后台",
+    "TargetProjectType": "CSharpAspnetMvc",
+    "ServerName": "SavoryLessonSqlite",
+    "FrontEndType": "Default",
+    "ExcludeLibrary": true,
+    "Id": 26,
+    "DataStatus": 1,
+    "CreateTime": "0001-01-01T00:00:00",
+    "LastUpdateTime": "0001-01-01T00:00:00"
+  },
+  "SubjectList": [
+    {
+      "ProjectName": "SavoryLessonManage",
+      "SubjectName": "Lesson",
+      "DisplayName": "课程",
+      "TableName": "lesson",
+      "Description": "单个课程，对应一个markdown文件",
+      "Id": 40,
+      "DataStatus": 1,
+      "CreateTime": "0001-01-01T00:00:00",
+      "LastUpdateTime": "0001-01-01T00:00:00"
+    }
+  ],
+  "PropertyList": [
+    {
+      "ProjectName": "SavoryLessonManage",
+      "SubjectName": "Lesson",
+      "PropertyName": "Ename",
+      "DisplayName": "课程唯一标识",
+      "ProgramType": "STRING",
+      "FieldName": "ename",
+      "PropertyFrom": "Basic",
+      "IsMultiMeta": false,
+      "MetadataName": null,
+      "Description": "课程唯一标识",
+      "Position": 0,
+      "CreateRequired": true,
+      "UpdateRequired": true,
+      "Pattern": null,
+      "Inputable": true,
+      "Updatable": true,
+      "Id": 137,
+      "DataStatus": 1,
+      "CreateTime": "0001-01-01T00:00:00",
+      "LastUpdateTime": "0001-01-01T00:00:00"
+    },
+    {
+      "ProjectName": "SavoryLessonManage",
+      "SubjectName": "Lesson",
+      "PropertyName": "Title",
+      "DisplayName": "课程名称",
+      "ProgramType": "STRING",
+      "FieldName": "title",
+      "PropertyFrom": "Basic",
+      "IsMultiMeta": false,
+      "MetadataName": null,
+      "Description": "课程名称",
+      "Position": 1,
+      "CreateRequired": true,
+      "UpdateRequired": true,
+      "Pattern": null,
+      "Inputable": true,
+      "Updatable": true,
+      "Id": 138,
+      "DataStatus": 1,
+      "CreateTime": "0001-01-01T00:00:00",
+      "LastUpdateTime": "0001-01-01T00:00:00"
+    }
+  ],
+  "MetaList": []
+}

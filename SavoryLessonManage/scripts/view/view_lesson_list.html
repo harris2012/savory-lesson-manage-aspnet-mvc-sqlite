@@ -1,0 +1,68 @@
+<ol class="breadcrumb">
+    <li><a ui-sref="app.welcome">首页</a></li>
+    <li class="active">课程列表</li>
+</ol>
+
+<div class="row form-group">
+    <div class="col-sm-12">
+        <a class="btn btn-success" ui-sref="app.lesson-create">新增</a>
+    </div>
+</div>
+
+<div class="form-group" ng-show="!items_loaded">
+    <div class="col-sm-12">
+        <i class="loading"></i>列表加载中，请稍后...
+    </div>
+</div>
+<div class="form-group" ng-show="items_loaded && items_message != null && items_message.length > 0">
+    <div class="col-sm-12">
+        <p>{{items_message}}</p>
+    </div>
+</div>
+<table class="table table-hover" ng-show="items_loaded">
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>课程唯一标识</th>
+            <th>课程名称</th>
+            <th>查看</th>
+            <th>编辑</th>
+            <th>阅读</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in items">
+            <td>{{item.id}}</td>
+            <td>{{item.ename}}</td>
+            <td>{{item.title}}</td>
+            <td><a ui-sref="app.lesson-item({id: item.id})">查看</a></td>
+            <td><a ui-sref="app.lesson-update({id: item.id})">编辑</a></td>
+            <td><a href="{{item.ename}}" target="_blank">阅读</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="form-group" ng-show="!count_loaded">
+    <div class="col-sm-12">
+        <i class="loading"></i>页码加载中，请稍后...
+    </div>
+</div>
+<div class="form-group" ng-show="count_loaded && count_message != null && count_message.length > 0">
+    <div class="col-sm-12">
+        <p>{{count_message}}</p>
+    </div>
+</div>
+<div class="row" ng-show="count_loaded">
+    <div class="col-sm-12">
+        <ul uib-pagination
+            max-size="8"
+            items-per-page="15"
+            total-items="totalCount"
+            ng-model="currentPage"
+            ng-change="pageChanged()"
+            class="pagination"
+            previous-text="上一页"
+            next-text="下一页"
+            boundary-link-numbers="true"></ul>
+    </div>
+</div>
