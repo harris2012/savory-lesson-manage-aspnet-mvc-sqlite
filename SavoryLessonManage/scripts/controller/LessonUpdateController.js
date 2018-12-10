@@ -1,4 +1,4 @@
-//新建数据库
+﻿//新建数据库
 function LessonUpdateController($scope, $state, $stateParams, SavoryLessonManageService) {
 
     $scope.id = $stateParams.id;

@@ -1,4 +1,4 @@
-function LessonItemController($scope, $state, $stateParams, SavoryLessonManageService) {
+﻿function LessonItemController($scope, $state, $stateParams, SavoryLessonManageService) {
 
     $scope.id = $stateParams.id;
 

@@ -1,4 +1,4 @@
-function LessonListController($scope, $state, $stateParams, SavoryLessonManageService) {
+﻿function LessonListController($scope, $state, $stateParams, SavoryLessonManageService) {
 
     $scope.savoryLessonsHost = window.savoryLessonsHost;
 

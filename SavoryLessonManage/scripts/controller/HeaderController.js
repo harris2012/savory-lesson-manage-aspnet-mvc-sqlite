@@ -1,4 +1,4 @@
-function HeaderController($scope, SavoryLessonManageService) {
+﻿function HeaderController($scope, SavoryLessonManageService) {
 
     $scope.userName = "zhang";
 }

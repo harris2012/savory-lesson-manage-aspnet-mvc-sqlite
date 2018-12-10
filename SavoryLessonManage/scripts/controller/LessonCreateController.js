@@ -1,4 +1,4 @@
-function LessonCreateController($scope, $state, $stateParams, SavoryLessonManageService) {
+﻿function LessonCreateController($scope, $state, $stateParams, SavoryLessonManageService) {
 
     function lesson_empty_callback(response) {
 

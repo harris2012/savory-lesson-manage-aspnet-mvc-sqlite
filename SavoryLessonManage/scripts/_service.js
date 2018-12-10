@@ -1,4 +1,4 @@
-function SavoryLessonManageService($resource, $q) {
+﻿function SavoryLessonManageService($resource, $q) {
 
     var resource = $resource('api/search-support', {}, {
 
