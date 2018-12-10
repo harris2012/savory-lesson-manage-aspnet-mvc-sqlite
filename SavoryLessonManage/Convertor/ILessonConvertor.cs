@@ -1,4 +1,4 @@
-using SavoryLessonManage.Controllers.Request;
+﻿using SavoryLessonManage.Controllers.Request;
 using SavoryLessonManage.Repository.Entity;
 using SavoryLessonManage.Vo;
 using System;
@@ -19,7 +19,7 @@ namespace SavoryLessonManage.Convertor
         /// <summary>
         /// request 转换为 entity
         /// </summary>
-        LessonEntity toEntity(LessonUpdateRequest request);
+        LessonEntity toEntity(LessonUpdateRequest request, LessonEntity oldEntity);
 
         /// <summary>
         /// 获取空 vo

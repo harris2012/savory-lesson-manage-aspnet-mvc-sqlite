@@ -25,7 +25,6 @@ function LessonListController($scope, $state, $stateParams, SavoryLessonManageSe
         $scope.totalCount = response.totalCount;
     }
 
-    //分页
     $scope.pageChanged = function () {
 
         $scope.items_loaded = false;
@@ -36,7 +35,7 @@ function LessonListController($scope, $state, $stateParams, SavoryLessonManageSe
         request.pageIndex = $scope.currentPage;
 
         SavoryLessonManageService.lesson_items(request).then(lesson_items_callback);
-    };
+    }
 
     {
         $scope.maxSize = 10;

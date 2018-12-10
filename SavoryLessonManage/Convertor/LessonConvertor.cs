@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using SavoryLessonManage.Controllers.Request;
 using SavoryLessonManage.Repository.Entity;
 using SavoryLessonManage.Vo;
+using SavoryLessonManage.Utility;
 
 namespace SavoryLessonManage.Convertor
 {
@@ -22,7 +23,7 @@ namespace SavoryLessonManage.Convertor
             return entity;
         }
 
-        public LessonEntity toEntity(LessonUpdateRequest request)
+        public LessonEntity toEntity(LessonUpdateRequest request, LessonEntity oldEntity)
         {
             LessonEntity entity = new LessonEntity();
 
